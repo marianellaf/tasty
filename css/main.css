@@ -1,0 +1,221 @@
+/*estilos nav*/
+.navbar .navbar-default-static-top{
+	color:#E56464;
+}
+
+.navbar {
+    position: relative;
+    min-height: 74px;
+    margin-bottom: -2px;
+    border: 1px solid transparent;
+    
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
+.navbar-toggle span{
+	color: black;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #0C0C0C;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: -9%;
+    margin-top: 22px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.titu{
+	font-size: 45px;
+	margin-left: 10px;
+
+}
+.menu{
+	margin-left: 74px;
+}
+.fondo{
+	background-image: url(../img/12ehc6fxpyg-eaters-collective.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:20%;
+	padding-bottom: 10%;
+}
+.txt{
+	text-align: left;
+	margin-left: -23%;
+
+}
+
+/*receta
+/*efecto img*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 61px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: -200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.1s ease-out 0.5s;
+  transition: all 0.1s ease-out 0.5s;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  width:100%;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.hovereffect p.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  margin: -10px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.hovereffect p.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover p.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  box-shadow: 0 0 5px #000;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/*efecto slaider*/
+#slider-container {
+  height: 600px;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 150%;
+
+}
+
+#sldier {
+  height: 100%;
+  width: 150%;
+}
+
+#slider .slide img {
+	width: 150%;
+  height: 100%;
+  width: auto;
+}
+
+#prev, #next {
+  cursor: pointer;
+  max-width: 60px;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  z-index: 999;
+}
+
+#prev { left: 0; }
+
+#next { right: 0; }
+
+#slider-container:hover #prev, #slider-container:hover #next { opacity: .7; }
+
+.slide {
+  position: absolute;
+  width: 105%;
+}
+
+.slide-copy {
+  background: #777;
+  background: rgba(0, 0, 0, .5);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 6px 33px;
+  margin-bottom: 108px;
+  position: absolute;
+}
+
+.slide-copy-copy {
+  background: #777;
+  background: rgba(0, 0, 0, .5);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 6px 33px;
+  margin-bottom: 108px;
+  position: absolute;
+}
