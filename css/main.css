@@ -283,7 +283,6 @@ body {
 }
 /*efecto muchas fotos*/
 
-
 .boby{
   background: #e9e9e9;
 }
@@ -313,7 +312,8 @@ body {
   background-size: cover;
   width: 220px;
 }
-#waterfall { margin: 10px; }
+#waterfall { 
+  margin: 15px; }
 
 #waterfall li {
   left: 0;
@@ -322,13 +322,13 @@ body {
   transform: translateY(50px);
 }
 
-#waterfall li.show {
+#waterfall.show {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.3s, top 1s;
+  transition: all 0.3s, top 2s;
 }
 
-#waterfall li > div {
+#waterfall > div {
   color: rgba(0,0,0,0.6);
   font-size: 32px;
   border-radius: 3px;
@@ -339,7 +339,7 @@ body {
   transition: all 0.5s;
 }
 
-#waterfall li > div:hover {
+#waterfall  > div:hover {
   transform: translateY(-10px);
   border: 1px solid rgba(038, 191, 64, 1);
   box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
