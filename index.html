@@ -1,20 +1,21 @@
+
 <!DOCTYPE html>
-<html>
+<html leng="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<title>Tasty</title>
 	<link rel="stylesheet" type="text/css" href="css/component.css">
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="animate.css/animate.css">
-	<link rel="stylesheet" type="text/css" href="res/reset2.0.min.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="animate.css/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<title>Tasty</title>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js"></script>
+	
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -58,7 +59,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 <section>
-	<div class="row">
+	<div class="row"><!-- navbar -->
 		<div class="col-xs-12 col-sm-12">
 			<div class="fondo ">
 				<div class="col-xs4-col-sm-4">
@@ -73,7 +74,7 @@
 	</div>
 </section>
 <section>
-	<div class="row">
+	<div class="row"><!-- recetas con efecto-->
 		<div class="col-xs-12 col-sm-6 text-center receta">
 			<h1>Recetas Destacadas</h1>
 		</div>
@@ -117,9 +118,9 @@
 		</div>
 	</div>
 </div>
-</section>
+</section><!-- fin de recetas-->
 <section>
-	<div id="slider-container">
+	<div id="slider-container"><!-- slaider-->
   <img src="img/left-arrow.png" id="prev">
   <ul id="slider">
     <li class="slide">
@@ -146,69 +147,160 @@
   </ul>
   <img src="img/right-arrow.png" id="next">     
 </div>
-</section>
-<section>
+</section><!--fin slider-->
+<section><!-- imagenes tipo ´pinteres-->
 	<div class="row">
 		<div class="col-xs-12-col-sm-6  recetaa">
 			<h1>Receta</h1>
 		</div>
-		<ul id="waterfall">  
-			<li>
-				<div class="Content goes here">
-					<img src="receta3.jpg">
-				</div>
-			</li>
-			<li>
-				<div class="Content goes here">
-					<img src="receta2.jpg">
-
-				</div>
-			</li>
-			<li>
-				<div class="Content goes here">
-					<img src="receta4.jpg">
-				</div>
-			</li>
-
-		</ul>  
 	</div>
+	<div class="contenedor boby">
+				<ul id="waterfall"> 
 
-</section>
+		<li><div class="waterfall">
+			<img src="5150-44.jpg" width="220px" height="400" alt="">
+		</div></li>
 
-<footer class="elemetos">
+		<li><div class="cosa">
+			<img src="mona.jpg" width="220px" height="300" alt="">
+		</div></li>
+		<li><div class="elemento">
+			<img src="images.jpg" width="220px" height="500" alt="">
+		</div></li>
 
-	<section class="elementos">
-		<div class="row">	
-			<div class="col-xs-2 iconn">
-				<h1>Address</h1>
-			</div>
-			<div class="col-xs-2 iconn">
-				<h1>Mail</h1>
-			</div>
-			<div class="col-xs-2 iconn">
-				<h1>Phone</h1>
-			</div>
-			<div class="col-xs-1 icon">
-				<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-xs-1 icon">
-				<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-			</div>
-			<div class="col-xs-1 icon">
-				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<li><div class="cosa">
+			<img src="espal.jpg" width="220px" height="600" alt="">
+		</div></li>
+		<li><div class="cosa">
+			<img src="descarga.jpg" width="220px" height="200" alt="">
+		</div></li>
+		<li><div class="cosa">
+			<img src="5150-44.jpg" width="220px" height="400" alt="">
+		</div></li>
 
-			</div>
+		<!--<div class="elemento">
+			<img src="mona.jpg" width="220px" height="300" alt="">
 		</div>
-	</section>
-	
-</footer>
+		<div class="elemento">
+			<img src="images.jpg" width="220px" height="600"alt="">
+		</div>
 
+		<div class="elemento">
+			<img src="espal.jpg" width="220px" height="500" alt="">
+		</div>
+		<div class="elemento">
+			<img src="descarga.jpg" width="220px" height="300" alt="">
+		</div>
+		<div class="elemento">
+			<img src="5150-44.jpg" width="220px" height="400" alt="">
+		</div>
+
+		<div class="elemento">
+			<img src="mona.jpg" width="220px" height="300" alt="">
+		</div>
+		<div class="elemento">
+			<img src="images.jpg" width="220px" height="500" alt="">
+		</div>
+
+		<div class="elemento">
+			<img src="espal.jpg" width="220px" height="600" alt="">
+		</div>
+		<div class="elemento">
+			<img src="descarga.jpg" width="220px" height="200" alt="">
+		</div>
+		<div class="elemento">
+			<img src="5150-44.jpg" width="220px" height="400" alt="">
+		</div>
+
+		<div class="elemento">
+			<img src="mona.jpg" width="220px" height="300" alt="">
+		</div>
+		<div class="elemento">
+			<img src="images.jpg" width="220px" height="600"alt="">
+		</div>
+
+		<div class="elemento">
+			<img src="espal.jpg" width="220px" height="500" alt="">
+		</div>
+		<div class="elemento">
+			<img src="descarga.jpg" width="220px" height="300" alt="">
+		</div>-->
+	</div>
+</ul>
+
+</section><!-- fin de imagenes estilo pinteres-->
+
+<script>
+	var elem = document.querySelector('.contenedor');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.elemento',
+  
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});
+
+
+var colCount = 0;
+var colWidth = 0;
+var margin = 20;
+var windowWidth = 0;
+var elemento = [];
+
+function positionBlocks() {
+    windowWidth = $(window).width();
+    colWidth = $('.block').outerWidth();
+    colCount = Math.floor(windowWidth/(colWidth+margin));
+    for(var i=0;i<colCount;i++) {
+        elemento.push(margin);
+    }
+    $('.block').each(function(){
+        var min = Array.min(elementos);
+        var index = $.inArray(min, elementoss);
+        var leftPos = margin+(index*(colWidth+margin));
+        $(this).css({
+            'left':leftPos+'px',
+            'top':min+'px'
+        });
+        elemento[index] = min+block.outerHeight()+margin;
+    });
+}
+// Función para obtener el valor mínimo del array
+Array.min = function(array) {
+    return Math.min.apply(Math, array);
+};
+
+
+
+//efecto pinteres prueba dos
+var('#waterfall').NewWaterfall();
+$('#waterfall').NewWaterfall({
+
+  // width of grid item
+  width: 220,
+
+  // refresh delay
+  delay: 100,
+
+  // By default, the plugin will add the class 'show' to grid item when in viewport
+  // setting the options to true will remove the class when out of the viewport
+  repeatShow: false
+  
+});
+</script>
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/app.js"></script>	
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="sass/bootstrap-sass-3.3.7/assets/javascripts/bootstrap.min.js" crossorigin="anonymous"></script>
-	<script src="newWaterfall.js"></script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="newWaterfall.js"></script>
 </body>
 </html>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
