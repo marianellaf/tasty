@@ -96,7 +96,7 @@ body {
 
 /*receta
 /*efecto img*/
-.receta{
+/*.receta{
     text-align: center;
     font-family: Helvetica, sans-serif;
     margin-left: 21%;
@@ -203,7 +203,19 @@ body {
   border: 1px solid #000;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
-}
+}*/
+
+
+img .efec{
+    width:450px;
+    height:auto;
+    border:5px solid #c5c5c5;
+    border-radius: 4px;
+
+
+  }
+  h3 { margin:150px auto 30px auto; text-align:center}
+
 /*efecto slaider*/
 #slider-container {
   height: 600px;
@@ -297,49 +309,51 @@ body {
 
 
 /*efecto nuevo segundo intento 2.0*/
-.waterfall{
-  background-image: url(../img/espal.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 220px;
-  color: rgba(197, 98, 98, 0.6);
-    font-size: 32px;
-    border-radius: 3px;
-    margin: 10px;
-    padding: 15px;
-   
- 
-    transition: all 2s;
+#body {
+  background: rgb(245,245,245);
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.6em;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  color: rgba(0,0,0,0.6);
+  overflow-x: hidden;
 }
-#waterfall { 
-  margin: 15px; }
+#waterfall { margin: 10px; }
 
 #waterfall li {
+  /*position: absolute;*/
   left: 0;
   top: 0;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(100px);
 }
 
-#waterfall.show {
+#waterfall li.show {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.3s, top 2s;
+  transition: all 0.3s, top 1s;
 }
 
 #waterfall li > div {
-    color: rgba(197, 98, 98, 0.6);
-    font-size: 32px;
-    border-radius: 3px;
-    margin: 10px;
-    padding: 15px;
-    background: rgb(214, 31, 31);
-    border: 1px solid rgba(038, 191, 64, 0);
-    transition: all 2s;
+  color: rgba(0,0,0,0.6);
+  font-size: 32px;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 15px;
+  background: rgb(255,255,255);
+  border: 1px solid rgba(038, 191, 64, 0);
+  transition: all 0.5s;
+   background-image: url(/img/espal.jpg);
+}
 
-#waterfall  > div:hover {
+#waterfall li > div:hover {
   transform: translateY(-10px);
   border: 1px solid rgba(038, 191, 64, 1);
   box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
   transition: all 0.3s;
+
 }
+h1 {
+    margin: 52px auto 30px auto;
+    text-align: center;
