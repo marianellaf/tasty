@@ -271,16 +271,7 @@ body {
   margin-bottom: 108px;
   position: absolute;
 }
-/*footer*/
-.elemen{
-  margin-top: 10%;
-}
-.icon{
-  font-size: 67px;
-}
-.iconn{
-  margin-left: 57px;
-}
+
 /*efecto muchas fotos*/
 
 .boby{
@@ -292,11 +283,11 @@ body {
 }
 .cosa{
   width:220px;
-  background: #E921CA;
+  background: #D6D3D6;
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
-  box-shadow: 1px 2px 0 rgba(0,0,0,.22);
+ box-shadow: 0, 1px, 2px, 0, rgba(0,0,0,0.22)
 
 }
 .cosa img{
@@ -311,6 +302,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 220px;
+  color: rgba(197, 98, 98, 0.6);
+    font-size: 32px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 15px;
+   
+ 
+    transition: all 2s;
 }
 #waterfall { 
   margin: 15px; }
@@ -328,16 +327,15 @@ body {
   transition: all 0.3s, top 2s;
 }
 
-#waterfall > div {
-  color: rgba(0,0,0,0.6);
-  font-size: 32px;
-  border-radius: 3px;
-  margin: 10px;
-  padding: 15px;
-  background: rgb(255,255,#186161);
-  border: 1px solid rgba(038, 191, 64, 3);
-  transition: all 0.5s;
-}
+#waterfall li > div {
+    color: rgba(197, 98, 98, 0.6);
+    font-size: 32px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 15px;
+    background: rgb(214, 31, 31);
+    border: 1px solid rgba(038, 191, 64, 0);
+    transition: all 2s;
 
 #waterfall  > div:hover {
   transform: translateY(-10px);
